@@ -1,12 +1,16 @@
 import React from 'react';
+import ContainerWrapper from '../container_wrapper/container_wrapper';
+
+import classes from './trading_school.module.css';
 
 const TradingSchool = () => {
     return (
-        <section class="container-wrapper ">
-            <div class="container-inner ">
+        <ContainerWrapper>
+            <div className={classes['container-inner']}>
                 <h2 class="h2-center">TRADING AS A BUSINESS Trading School Mission:</h2>
                 <h4>To teach and empower students to learn how to profit from the recognition of important levels and trends in the markets. All TRADING AS A BUSINESS Trading School courses are taught using real-time action in the market, putting you in real-world trading situations while you learn.</h4>
-                <h2 class="h2-center">The TRADING AS A BUSINESS Process:</h2>
+                <h2 class="h2-center">The TRADING AS A BUSINESS Process:</h2>import ContainerWrapper from './../container_wrapper/container_wrapper';
+
                 <h4>TRADING AS A BUSINESS Trading School is designed like an accelerated college course on trading.</h4>
                 <h4>As such, progress through the program follows this path:</h4>
                 <ul class="b-double">
@@ -16,7 +20,7 @@ const TradingSchool = () => {
                 </ul>
                 <h4>This 3 step process is the path to your own personalized success!</h4>
             </div>
-        </section>
+        </ContainerWrapper>
     );
 };
 
