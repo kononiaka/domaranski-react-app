@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Sacramento";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./17343.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./Oswald.ttf") format("truetype");
+}

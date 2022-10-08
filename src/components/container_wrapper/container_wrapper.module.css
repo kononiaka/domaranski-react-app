@@ -1,0 +1,8 @@
+.container-wrapper {
+    /* background-color: #FFFFFF; */
+    /* padding: 70px 0px 70px 0px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

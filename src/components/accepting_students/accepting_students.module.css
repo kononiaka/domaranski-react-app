@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth
+}
+
+#accepting_students {
+    scroll-margin-top: 100px;
+}
+
+.container-inner {
+    margin: 100px 20px;
+    max-width: 1024px;
+    width: 100%;
+}
+
+.accepting-students {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.container-inner h2 {
+    color: #000000;
+    font-family: "Oswald", Sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-bottom: 50px;
+}
+
+.container-inner h4 {
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin-bottom: 50px;
+}
+
+.container-inner li {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+    /* padding-left: 10px; */
+    /* list-style: none; */
+    margin-bottom: 25px;
+}
+
+.accepting-students__item li:last-child {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 250px;
+}

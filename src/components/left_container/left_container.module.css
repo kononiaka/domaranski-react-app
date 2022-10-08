@@ -1,0 +1,58 @@
+.card {
+    height: 95vh;
+    width: 75vw;
+    opacity: 95%;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-link {
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.list-link-a {
+    color: rgb(77, 75, 75);
+}
+
+.list-link-a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+.list-link li {
+    display: inline;
+    padding: 19px 22px;
+}
+
+.list-link li:hover {
+    background-color: #F7F7F7;
+}
+
+.list-link li:first-child {
+    display: inline;
+}
+
+.logo-text {
+    font-family: "Oswald", Sans-serif;
+    color: #112644;
+    font-size: 52px;
+    font-weight: 800;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    margin: 185px 0;
+    text-transform: uppercase;
+    transform: scaleY(1.5);
+    letter-spacing: 2px;
+    margin-left: 25px;
+
+}
+
+.logo-text span {
+    text-shadow: -1px 0 #112644, 0 1px #112644, 1px 0 #112644, 0 -1px #112644;
+    color: #fff;
+}
