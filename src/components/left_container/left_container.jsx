@@ -12,8 +12,8 @@ const LeftContainer = () => {
                 <ul className={classes['list-link']} style={{ listStyleType: 'none' }}>
                     <li><a className={classes['list-link-a']} href="#accepting_students">Study</a></li>
                     <li><a className={classes['list-link-a']} href="#what_you_get">What you get?</a></li>
-                    <li><a className={classes['list-link-a']} href="#">Our Mission</a></li>
-                    <li><a className={classes['list-link-a']} href="#">Process</a></li>
+                    {/* <li><a className={classes['list-link-a']} href="#trading_school">Our Mission</a></li> */}
+                    <li><a className={classes['list-link-a']} href="#trading_school">Process</a></li>
                     <li><a className={classes['list-link-a']} href="#">Education</a></li>
                     <li><a className={classes['list-link-a']} href="#">Contact Us</a></li>
                 </ul>

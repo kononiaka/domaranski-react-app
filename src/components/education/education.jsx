@@ -1,0 +1,27 @@
+import React from 'react';
+import ContainerWrapper from '../container_wrapper/container_wrapper';
+
+import classes from './education.module.css';
+
+const Education = () => {
+    return (
+        <ContainerWrapper background={classes['c-blue-wrapper']}>
+            <div className={`${classes['container-inner']} ${classes['c-blue-inner']}`}>
+                <h2>Education For Modern Retail Traders</h2>
+                <h4>Avoid outdated and incomplete modes of trading education. All TRADING AS A BUSINESS Trading School courses are taught using real-time action in the market, putting you in real-world trading situations while you learn -- and connecting you with the technology you need to succeed.</h4>
+                <h4>College style courses using WHAT'S HAPPENING IN THE MARKET TODAY to teach you:</h4>
+                <ul style={{ listStyleType: 'none' }}>
+                    <li>Chart Price Levels &amp; Technical Analysis</li>
+                    <li>How to Identify Trends and Momentum</li>
+                    <li>All of the Chart Price Patterns You Need to Know</li>
+                    <li>Market Principles &amp; Applied Concepts</li>
+                </ul>
+                <div className={classes.banner__btn}>
+                    Start Your 7-Day Trial Now!
+                </div>
+            </div>
+        </ContainerWrapper >
+    );
+};
+
+export default Education;

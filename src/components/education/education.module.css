@@ -1,0 +1,47 @@
+.c-blue-wrapper {
+    background-color: #142845;
+    color: #fff !important;
+}
+
+.container-inner {
+    margin: 0 20px;
+    max-width: 924px;
+    width: 100%;
+}
+
+.c-blue-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.banner__btn {
+    font-size: 21px;
+    font-weight: 600;
+    background-color: #FFA100;
+    padding: 25px 50px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 50%;
+    margin: auto 0;
+}
+
+.container-inner h2 {
+    font-family: "Oswald", Sans-serif;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-bottom: 50px;
+}
+
+.container-inner h4 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin: 25px 0;
+}
