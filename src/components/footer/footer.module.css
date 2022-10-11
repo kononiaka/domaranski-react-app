@@ -1,0 +1,24 @@
+.footer {
+    background-color: #00274a;
+    padding: 40px;
+}
+
+.footer-up {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+}
+
+.footer-down {
+    margin: 40px 0 0 0;
+}
+
+.logo-and-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-and-div__logo {
+    max-height: 100px;
+}

@@ -1,5 +1,5 @@
 .c-blue-wrapper {
-    background-color: #142845;
+    background-color: #288DCD;
     color: #fff !important;
 }
 
@@ -27,7 +27,7 @@
     cursor: pointer;
     transition: all 0.2s;
     width: 50%;
-    margin: auto 0;
+    margin-bottom: 95px
 }
 
 .container-inner h2 {
@@ -44,4 +44,14 @@
     font-weight: 600;
     line-height: 1.4em;
     margin: 25px 0;
+}
+
+.container-inner li {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 30px;
+    list-style: none;
+    position: relative;
+    margin-bottom: 25px;
 }

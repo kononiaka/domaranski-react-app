@@ -6,6 +6,7 @@ import classes from './education.module.css';
 const Education = () => {
     return (
         <ContainerWrapper background={classes['c-blue-wrapper']}>
+            <div id="education"></div>
             <div className={`${classes['container-inner']} ${classes['c-blue-inner']}`}>
                 <h2>Education For Modern Retail Traders</h2>
                 <h4>Avoid outdated and incomplete modes of trading education. All TRADING AS A BUSINESS Trading School courses are taught using real-time action in the market, putting you in real-world trading situations while you learn -- and connecting you with the technology you need to succeed.</h4>
