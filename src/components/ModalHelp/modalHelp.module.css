@@ -1,0 +1,37 @@
+.email_logo {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-image: url('./email.png');
+}
+
+.email_logo a {
+    color: #000;
+    padding-left: 33px;
+}
+
+.email_logo a:hover {
+    color: rgb(104, 99, 99);
+    text-decoration: none;
+}
+
+.phone_logo {
+    width: 25px;
+    height: 25px;
+    background-size: cover;
+    background-image: url('./phone-call.png');
+}
+
+.phone_logo_block {
+    margin-top: 5px;
+}
+
+.phone_logo a {
+    color: #000;
+    padding-left: 33px;
+}
+
+.phone_logo a:hover {
+    color: rgb(104, 99, 99);
+    text-decoration: none;
+}

@@ -15,7 +15,7 @@ const LeftContainer = () => {
                     {/* <li><a className={classes['list-link-a']} href="#trading_school">Our Mission</a></li> */}
                     <li><a className={classes['list-link-a']} href="#trading_school">Process</a></li>
                     <li><a className={classes['list-link-a']} href="#education">Education</a></li>
-                    <li><a className={classes['list-link-a']} href="#ss">Contact Us</a></li>
+                    <li><a className={classes['list-link-a']} href="#contacts">Contact Us</a></li>
                 </ul>
                 <h1 className={classes['logo-text']}>
                     TRADING AS A BUSINESS <br></br><span>TRADING SCHOOL</span>

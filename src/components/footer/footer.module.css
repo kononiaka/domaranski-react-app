@@ -22,3 +22,8 @@
 .logo-and-div__logo {
     max-height: 100px;
 }
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
