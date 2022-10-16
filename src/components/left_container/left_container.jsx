@@ -4,7 +4,7 @@ import NavBar from './../navBar/navBar';
 
 import classes from './left_container.module.css';
 
-const LeftContainer = () => {
+const LeftContainer = (props) => {
     return (
         <>
             <div className={classes.card}>
@@ -20,7 +20,7 @@ const LeftContainer = () => {
                 <h1 className={classes['logo-text']}>
                     TRADING AS A BUSINESS <br></br><span>TRADING SCHOOL</span>
                 </h1>
-                <BannerInner></BannerInner>
+                <BannerInner handleClick={props.handleClick}></BannerInner>
             </div>
         </>
     );

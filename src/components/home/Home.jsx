@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import Main from './../main/main';
 import AcceptingStudents from './../accepting_students/accepting_students';

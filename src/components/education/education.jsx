@@ -3,7 +3,7 @@ import ContainerWrapper from '../container_wrapper/container_wrapper';
 
 import classes from './education.module.css';
 
-const Education = () => {
+const Education = (props) => {
     return (
         <ContainerWrapper background={classes['c-blue-wrapper']}>
             <div id="education"></div>
@@ -17,7 +17,7 @@ const Education = () => {
                     <li>All of the Chart Price Patterns You Need to Know</li>
                     <li>Market Principles &amp; Applied Concepts</li>
                 </ul>
-                <div className={classes.banner__btn}>
+                <div className={classes.banner__btn} onClick>
                     Start Your 7-Day Trial Now!
                 </div>
             </div>
