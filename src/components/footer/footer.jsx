@@ -15,12 +15,12 @@ const Footer = () => {
             <div className={classes["footer-down"]}>
                 <div className={classes["logo-and-div"]}>
                     <img className={classes["logo-and-div__logo"]} alt="logo" src={logo} />
-                    <div className={`${classes["logo-and-div__div"]} ${classes["social-media"]}`}>
-                        <a href="https://www.facebook.com/profile.php?id=100058474374239"><img src={fb_logo} alt="social media" /></a>
-                        <a href="https://twitter.com/Trading_Busines"><img src={fb_twitter} alt="social media" /></a>
-                        <a href="https://www.instagram.com/trading.as.a.business/"><img src={fb_instagramm} alt="social media" /></a>
-                        <a href="https://www.youtube.com/channel/UCCAcjF2NBn7GS3dl9zq3O5g"><img src={fb_youtube} alt="social media" /></a>
-                        <a href="https://www.patreon.com/TradingAsABusiness?fan_landing=true"><img src={fb_patreon} alt="social media" /></a>
+                    <div className={classes["social-media"]}>
+                        <a href="https://www.facebook.com/profile.php?id=100058474374239" className={classes.links}><img src={fb_logo} alt="social fb media" /></a>
+                        <a href="https://twitter.com/Trading_Busines" className={classes.links}><img src={fb_twitter} alt="social tw media" /></a>
+                        <a href="https://www.instagram.com/trading.as.a.business/" className={classes.links}><img src={fb_instagramm} alt="social inst media" /></a>
+                        <a href="https://www.youtube.com/channel/UCCAcjF2NBn7GS3dl9zq3O5g" className={classes.links}><img src={fb_youtube} alt="social you media" /></a>
+                        <a href="https://www.patreon.com/TradingAsABusiness?fan_landing=true" className={classes.links}><img src={fb_patreon} alt="social patr media" /></a>
                     </div>
                 </div>
             </div>

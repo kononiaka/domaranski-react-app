@@ -33,7 +33,7 @@ const WhatYouGet = () => {
                             Yurii Domaranskyi, Lead Market Technician, TRADING AS A BUSINESS
                         </h4>
                         <ul>
-                            <li><b>Trading sice 2018</b></li>
+                            <li><b>Trading since 2018</b></li>
                             <li><b>Head of trading at TRADING AS A BUSINESS</b></li>
                             <li><b>Maximum return in trading career over 200% in a year</b></li>
                         </ul>

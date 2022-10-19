@@ -1,33 +1,42 @@
-import React, { Component } from "react";
-import "./App.css";
-import Home from "./components/home/Home";
-import "./fonts/fonts.css";
-import "bootstrap/dist/css/bootstrap.css";
-import { Route, Switch, Redirect } from "react-router";
-import Works from "./components/works/Works";
-import About from "./components/about/About";
-import Exhibition from "./components/exhibition/Exhibition";
-import Store from "./components/store/Store.jsx";
-import Contacts from "./components/contacts/Contacts";
-import NotFound from "./components/notFound/notFound";
+import React, { useState } from "react";
 
-class App extends Component {
-  render() {
-    return (
-      <React.Fragment>
-        <Switch>
-          <Route path="/works" component={Works}></Route>
-          <Route path="/contact" component={Contacts}></Route>
-          <Route path="/store" component={Store}></Route>
-          <Route path="/exhibition" component={Exhibition}></Route>
-          <Route path="/about" component={About}></Route>
-          <Route path="/not-found" component={NotFound}></Route>
-          <Route path="/" exact component={Home}></Route>
-          <Redirect to="/not-found"></Redirect>
-        </Switch>
-      </React.Fragment>
-    );
-  }
-}
+import ModalHelp from './components/ModalHelp/modalHelp';
+import Main from './components/main/main';
+import AcceptingStudents from './components/accepting_students/accepting_students';
+import WhatYouGet from './components/what_you_get/what_you_get';
+import TradingSchool from "./components/tradingSchool/trading_school";
+import Education from "./components/education/education";
+import Footer from './components/footer/footer';
+import PopUpSubmit from './components/pop_up_submit/pop_up_submit';
 
-export default App;
+const Home = () => {
+  const [showSubmit, setShowSubmit] = useState(false);
+  const [showHelp, setShowHelp] = useState(false);
+
+  const helpHandler = () => {
+    setShowHelp(true);
+  };
+  const handleClick = () => {
+    setShowSubmit(true);
+  };
+
+  const helpCloseHandler = () => {
+    setShowHelp(false);
+    setShowSubmit(false);
+  };
+
+  return (
+    <>
+      <Main handleClick={handleClick} helpHandler={helpHandler}></Main>
+      <AcceptingStudents></AcceptingStudents>
+      <WhatYouGet></WhatYouGet>
+      <TradingSchool></TradingSchool>
+      <Education handleClick={handleClick}></Education>
+      <Footer></Footer>
+      {showSubmit && <PopUpSubmit onClose={helpCloseHandler} submit />}
+      {showHelp && <ModalHelp onClose={helpCloseHandler} />}
+    </>
+  );
+};
+
+export default Home;

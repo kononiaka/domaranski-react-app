@@ -1,5 +1,6 @@
 import React from 'react';
 import ContainerWrapper from '../container_wrapper/container_wrapper';
+import Button from '../UI/Button/Button';
 
 import classes from './education.module.css';
 
@@ -17,9 +18,7 @@ const Education = (props) => {
                     <li>All of the Chart Price Patterns You Need to Know</li>
                     <li>Market Principles &amp; Applied Concepts</li>
                 </ul>
-                <div className={classes.banner__btn} onClick>
-                    Start Your 7-Day Trial Now!
-                </div>
+                <Button margin click={props.handleClick}></Button>
             </div>
         </ContainerWrapper >
     );

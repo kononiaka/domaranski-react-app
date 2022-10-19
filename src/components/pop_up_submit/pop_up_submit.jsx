@@ -1,17 +1,14 @@
 import React from 'react';
-import Modal from './../UI/Modal';
+import Modal from '../UI/Modal';
 
 import classes from './pop_up_submit.module.css';
 
 const PopUpSubmit = (props) => {
-    // const [emailValue, setEmailValue] = useState("");
-
     const confirmHandler = async (event) => {
         event.preventDefault();
 
         const emailValue = event.target[0].value;
         const telValue = event.target[1].value;
-
 
         const response = await fetch('https://react-http-request-f29f6-default-rtdb.firebaseio.com/data.json', {
             method: 'POST',
