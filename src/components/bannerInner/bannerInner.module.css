@@ -21,19 +21,6 @@
     margin-bottom: 25px;
 }
 
-.banner__btn {
-    font-size: 21px;
-    font-weight: 600;
-    background-color: #FFA100;
-    padding: 25px 50px;
-    border-radius: 6px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.2s;
-    width: 50%;
-    margin: auto 0;
-}
-
 /* 
 @keyframes glowing {
     0% {
@@ -56,7 +43,3 @@
 .banner__btn {
     animation: glowing 2300ms infinite;
 } */
-
-.banner__btn:hover {
-    background-color: #e79302;
-}
