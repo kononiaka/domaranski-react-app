@@ -17,6 +17,7 @@
 
 .list-link-a {
     color: rgb(77, 75, 75);
+    text-decoration: none;
 }
 
 .list-link-a:hover {
