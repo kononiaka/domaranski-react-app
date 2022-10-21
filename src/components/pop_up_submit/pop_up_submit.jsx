@@ -4,6 +4,7 @@ import Modal from '../UI/Modal';
 import classes from './pop_up_submit.module.css';
 
 const PopUpSubmit = (props) => {
+    console.log(props);
     const confirmHandler = async (event) => {
         event.preventDefault();
 
@@ -18,9 +19,14 @@ const PopUpSubmit = (props) => {
 
         const data = await response.json();
 
+        // console.log(response.status);
         console.log(data);
-        console.log(emailValue);
-        console.log(telValue);
+        // console.log(emailValue);
+        // console.log(telValue);
+
+        if (response.status === 200) {
+            props.onClose();
+        }
     };
 
     return (
