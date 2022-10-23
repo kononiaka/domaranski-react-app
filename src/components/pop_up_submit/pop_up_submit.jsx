@@ -11,7 +11,7 @@ const PopUpSubmit = (props) => {
         const emailValue = event.target[0].value;
         const telValue = event.target[1].value;
 
-        const response = await fetch('https://react-http-request-f29f6-default-rtdb.firebaseio.com/data.json', {
+        const response = await fetch('https://trading-as-a-business-default-rtdb.europe-west1.firebasedatabase.app/contacts.json', {
             method: 'POST',
             body: JSON.stringify({ emailValue, telValue }),
             'Content-Type': 'application/json'
