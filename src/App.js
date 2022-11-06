@@ -9,9 +9,17 @@ import Education from "./components/education/education";
 import Footer from './components/footer/footer';
 import PopUpSubmit from './components/pop_up_submit/pop_up_submit';
 
+import { useMediaQuery } from 'react-responsive';
+
+import './App.css';
+
 const Home = () => {
   const [showSubmit, setShowSubmit] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
+
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 900px)'
+  });
 
   const helpHandler = () => {
     setShowHelp(true);
@@ -26,7 +34,7 @@ const Home = () => {
   };
 
   return (
-    <>
+    <div className={isDesktopOrLaptop ? "" : "isResponsive"}>
       <Main handleClick={handleClick} helpHandler={helpHandler}></Main>
       <AcceptingStudents></AcceptingStudents>
       <WhatYouGet></WhatYouGet>
@@ -35,7 +43,7 @@ const Home = () => {
       <Footer></Footer>
       {showSubmit && <PopUpSubmit onClose={helpCloseHandler} submit />}
       {showHelp && <ModalHelp onClose={helpCloseHandler} />}
-    </>
+    </div>
   );
 };
 
