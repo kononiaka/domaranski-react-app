@@ -67,13 +67,33 @@
     display: flex;
     justify-content: start;
     margin-top: 20px;
-    padding-left: 0;
-    font-size: 15px;
+    padding-left: 5px;
+    font-size: 12px;
 }
 
 
 .list-link-a-responsive {
     color: rgb(77, 75, 75);
     text-decoration: none;
-    margin-left: 1px;
+    margin-left: 6px;
+}
+
+.logo-text-responsive {
+    font-family: "Oswald", Sans-serif;
+    color: #112644;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 85px 0;
+    text-transform: uppercase;
+    transform: scaleY(1.3);
+    letter-spacing: 1.5px;
+    margin-left: 25px;
+}
+
+.logo-text-responsive span {
+    text-shadow: -1px 0 #112644, 0 1px #112644, 1px 0 #112644, 0 -1px #112644;
+    color: #fff;
+    font-size: 42px;
+    /* line-height: 12px; */
 }

@@ -1,4 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
+
+import { useMediaQuery } from 'react-responsive';
+
 import classes from "./Modal.module.css";
 
 const Modal = (props) => {
@@ -6,12 +9,17 @@ const Modal = (props) => {
         return <div className={classes.backdrop} onClick={props.onClick}></div >;
     };
     const ModalOverlay = (props) => {
+
+        const isDesktopOrLaptop = useMediaQuery({
+            query: '(min-width: 900px)'
+        });
+
         useEffect(() => {
 
         }, [props]);
 
         if (props.onSubmit) {
-            return <div className={classes.submitModal}>{props.children}</div>;
+            return <div className={isDesktopOrLaptop ? classes.submitModal : classes.submitModal__responsive}>{props.children}</div>;
         }
         return <div className={classes.modal}>{props.children}</div>;
     };

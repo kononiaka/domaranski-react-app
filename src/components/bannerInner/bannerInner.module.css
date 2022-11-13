@@ -21,6 +21,25 @@
     margin-bottom: 25px;
 }
 
+.banner-inner-responsive {
+    font-family: "Oswald", Sans-serif;
+    /* margin-top: -6%; */
+    background-color: #21212fad;
+    padding: 20px 20px 30px 20px;
+    /* transition: 0.3s, border-radius 0.3s, opacity 0.3s; */
+    border-radius: 0px 0px 14px 14px;
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* box-sizing: border-box; */
+    color: #FFFFFF;
+}
+
+.banner-inner-responsive h2 {
+    font-size: 18px;
+    text-align: center;
+}
+
 /* 
 @keyframes glowing {
     0% {

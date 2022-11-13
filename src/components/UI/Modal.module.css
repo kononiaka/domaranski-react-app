@@ -55,3 +55,17 @@
         transform: translateY(0);
     }
 }
+
+.submitModal__responsive {
+    position: fixed;
+    top: 25vh;
+    left: calc(50% - 10rem);
+    top: calc(50% - 20rem);
+    width: 20em;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 14px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+}

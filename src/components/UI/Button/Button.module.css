@@ -18,3 +18,18 @@
 .margin {
     margin-bottom: 85px;
 }
+
+/* RESPONSIVE */
+
+.banner__btn__responsive {
+    font-size: 26px;
+    /* font-weight: 600; */
+    background-color: #FFA100;
+    padding: 25px 5px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 75%;
+    margin: auto 0;
+}

@@ -55,3 +55,59 @@
     background-color: #e99708;
     border: 1px solid #000
 }
+
+/* RESPONSIVE */
+
+.popup-inner-responsive {
+    padding: 15px 30px 30px 30px;
+}
+
+.popup-inner-responsive h2 {
+    color: #333333;
+    font-size: 24px;
+    font-weight: 700;
+    /* margin: 10px 0 0 0; */
+    text-align: center;
+}
+
+.popup-inner-responsive h3 {
+    color: #0075B2;
+    font-weight: 700;
+    font-style: italic;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+
+.popup-inner-responsive form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    /* width: 100% */
+}
+
+.popup-inner-responsive form input {
+    width: 125%;
+    margin-left: -25px;
+}
+
+.popup-inner-responsive input[type=submit] {
+    background-color: #E09109;
+    color: #000;
+    padding: 10px 25px;
+    width: 100%;
+    /* font-size: 20px; */
+    font-weight: 600;
+    /* margin-left: -50px; */
+    /* line-height: 1.6em; */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 auto;
+    border: 1px solid #e99708
+}
+
+.popup-inner-responsive p {
+    text-align: center;
+    margin-top: 15px;
+}

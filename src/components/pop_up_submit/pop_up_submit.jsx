@@ -1,10 +1,17 @@
 import React from 'react';
 import Modal from '../UI/Modal';
 
+import { useMediaQuery } from 'react-responsive';
+
 import classes from './pop_up_submit.module.css';
 
 const PopUpSubmit = (props) => {
     console.log(props);
+
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-width: 900px)'
+    });
+
     const confirmHandler = async (event) => {
         event.preventDefault();
 
@@ -31,7 +38,7 @@ const PopUpSubmit = (props) => {
 
     return (
         <Modal onClick={props.onClose} onSubmit={props.submit}>
-            <div className={classes["popup-inner"]}>
+            <div className={isDesktopOrLaptop ? classes["popup-inner"] : classes["popup-inner-responsive"]}>
                 <h2>ENROLL NOW FOR THE TRIAL</h2>
                 <h3>
                     TRADING AS A BUSINESS Trading School
