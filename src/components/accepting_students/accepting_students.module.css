@@ -51,5 +51,17 @@
 .accepting-students__item li:last-child {
     font-size: 24px;
     font-weight: 600;
-    margin-bottom: 250px;
+    /* margin-bottom: 250px; */
+}
+
+/* RESPONSIVE */
+
+.container-inner-responsive {
+    margin: 25px 20px 0px;
+    max-width: 400px;
+    width: 80%;
+}
+
+.accepting-students__img__responsive {
+    width: 100%;
 }

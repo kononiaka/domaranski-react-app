@@ -33,3 +33,19 @@
     height: 28px;
     width: 28px;
 }
+
+/* RESPONSIVE */
+
+.footer__responsive {
+    background-color: #00274a;
+    padding: 40px;
+    text-align: center;
+}
+
+.social-media-responsive {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+    margin-left: 15px;
+    /* margin-right: 100px; */
+}

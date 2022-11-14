@@ -80,3 +80,47 @@
 .gapper {
     padding-bottom: 50px;
 }
+
+/* RESPONSIVE */
+
+.c-blue-inner-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 50px;
+}
+
+.container-inner-responsive h2 {
+    font-family: "Oswald", Sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 25px;
+}
+
+.container-inner-responsive h4 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info-card-responsive {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.info-card__title__responsive {
+    font-size: 18px !important;
+    margin-top: 25px;
+}
+
+.second-image-responsive {
+    border-radius: 14px;
+    width: 50%;
+    margin: 25px 100px;
+    /* margin: 0 auto; */
+    /* border: 2px solid green */
+}

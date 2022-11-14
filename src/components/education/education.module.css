@@ -42,3 +42,46 @@
     position: relative;
     margin-bottom: 25px;
 }
+
+/* RESPONSIVE */
+
+.container-inner-responsive {
+    margin: 0 20px;
+    max-width: 400px;
+    width: 80%;
+}
+
+.c-blue-inner-responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 25px;
+}
+
+.container-inner-responsive h2 {
+    font-family: "Oswald", Sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.container-inner-responsive h4 {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 1.4em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.container-inner-responsive li {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    list-style: none;
+    position: relative;
+    margin-bottom: 10px;
+
+}

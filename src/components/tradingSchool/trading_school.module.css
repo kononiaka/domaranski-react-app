@@ -41,3 +41,35 @@
     position: relative;
     margin-bottom: 25px;
 }
+
+/* RESPONSIVE */
+
+.container-inner-responsive {
+    margin: 0 10px;
+    max-width: 400px;
+    width: 80%;
+}
+
+.container-inner-responsive h2 {
+    color: #000000;
+    font-family: "Oswald", Sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 1.3em;
+    margin-top: 25px;
+}
+
+.container-inner-responsive h4 {
+    margin-top: 25px;
+    color: #000000;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.4em;
+    text-align: center;
+}
+
+.b-double-responsive li {
+    /* padding-left: 40px; */
+    font-weight: 600;
+}

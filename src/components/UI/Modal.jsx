@@ -21,7 +21,7 @@ const Modal = (props) => {
         if (props.onSubmit) {
             return <div className={isDesktopOrLaptop ? classes.submitModal : classes.submitModal__responsive}>{props.children}</div>;
         }
-        return <div className={classes.modal}>{props.children}</div>;
+        return <div className={isDesktopOrLaptop ? classes.modal : classes.modal__responsive}>{props.children}</div>;
     };
 
     // const portalElement = document.getElementById("overlays");

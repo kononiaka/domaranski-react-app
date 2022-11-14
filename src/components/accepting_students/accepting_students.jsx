@@ -1,14 +1,18 @@
-import React from 'react';
 import ContainerWrapper from '../container_wrapper/container_wrapper';
 import img from '../../img/img-1.png';
+
+import { useMediaQuery } from 'react-responsive';
 
 import classes from './accepting_students.module.css';
 
 const AcceptingStudents = () => {
+    const isDesktopOrLaptop = useMediaQuery({
+        query: '(min-width: 900px)'
+    });
     return (
         <ContainerWrapper>
             <div id="accepting_students"></div>
-            <div className={`${classes['accepting-students']} ${classes['container-inner']}`}>
+            <div className={isDesktopOrLaptop ? `${classes['accepting-students']} ${classes['container-inner']}` : `${classes['container-inner-responsive']}`}>
                 <div className={classes['accepting-students__item']}>
                     <h2>
                         Now accepting students!
@@ -26,7 +30,7 @@ const AcceptingStudents = () => {
                     </ul>
                 </div>
                 <div>
-                    <img className={classes['accepting-students__img']} alt="img" src={img} />
+                    <img className={isDesktopOrLaptop ? classes['accepting-students__img'] : classes['accepting-students__img__responsive']} alt="img" src={img} />
                 </div>
             </div>
         </ContainerWrapper>
