@@ -35,6 +35,7 @@
 
 .info-cards {
     display: flex;
+    flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
     margin-top: 40px;
@@ -73,7 +74,7 @@
 
 .second-image {
     border-radius: 14px;
-    width: 60%;
+    width: 55%;
     /* border: 2px solid green */
 }
 

@@ -29,7 +29,7 @@ const WhatYouGet = () => {
                         </h4>
                         <b>Normal price: $2,124 / year</b>
                     </div>
-                    <div className={isDesktopOrLaptop ? classes['info-cards'] : classes['info-cards-responsive']}>
+                    <div className={isDesktopOrLaptop ? classes['info-card'] : classes['info-cards-responsive']}>
                         <img className={isDesktopOrLaptop ? classes['second-image'] : classes['second-image-responsive']} src={img_person} alt="person" />
                         <h4 className={classes['info-card__title']}>
                             Meet your instructor:

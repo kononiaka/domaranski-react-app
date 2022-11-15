@@ -2,6 +2,7 @@ import React from 'react';
 import Modal from '../UI/Modal';
 
 import { useMediaQuery } from 'react-responsive';
+import cancelImg from './cancel.png';
 
 import classes from './pop_up_submit.module.css';
 
@@ -39,7 +40,9 @@ const PopUpSubmit = (props) => {
     return (
         <Modal onClick={props.onClose} onSubmit={props.submit}>
             <div className={isDesktopOrLaptop ? classes["popup-inner"] : classes["popup-inner-responsive"]}>
+
                 <h2>ENROLL NOW FOR THE TRIAL</h2>
+                <div className={isDesktopOrLaptop ? classes.cancel_btn : classes.cancel_btn__responsive} onClick={() => props.onClose()}></div>
                 <h3>
                     TRADING AS A BUSINESS Trading School
                 </h3>

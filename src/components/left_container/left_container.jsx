@@ -22,6 +22,7 @@ const LeftContainer = (props) => {
                     <li><a className={isDesktopOrLaptop ? classes['list-link-a'] : classes['list-link-a-responsive']} href="#trading_school">Process</a></li>
                     <li><a className={isDesktopOrLaptop ? classes['list-link-a'] : classes['list-link-a-responsive']} href="#education">Education</a></li>
                     <li><a className={isDesktopOrLaptop ? classes['list-link-a'] : classes['list-link-a-responsive']} href="#contacts">Contact Us</a></li>
+                    <li><a className={isDesktopOrLaptop ? classes['list-link-a'] : classes['list-link-a-responsive']} href="#">Enroll now!</a></li>
                 </ul>
                 <h1 className={isDesktopOrLaptop ? classes['logo-text'] : classes['logo-text-responsive']}>
                     TRADING AS A BUSINESS <br></br><span>TRADING SCHOOL</span>
@@ -32,4 +33,4 @@ const LeftContainer = (props) => {
     );
 };
 
-export default LeftContainer;
+export default LeftContainer;;

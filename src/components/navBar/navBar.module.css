@@ -48,6 +48,7 @@
     margin-left: 0.13em;
     font-size: 1.em;
     text-align: center;
+    margin-left: 30px;
     /* font-size: 2em; */
 }
 
@@ -68,7 +69,7 @@
 .logo-and-div-responsive {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-family: "Oswald", serif;
     color: #ffffff;

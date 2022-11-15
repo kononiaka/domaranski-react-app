@@ -8,12 +8,24 @@
     /* border-radius: 10px; */
 }
 
+.cancel_btn {
+    background-image: url("./cancel.png");
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 0px;
+    top: 25px;
+    cursor: pointer;
+}
+
 .popup-inner h2 {
     color: #333333;
     font-size: 32px;
     font-weight: 700;
     margin: 20px 0 0 0;
     text-align: center;
+    position: relative;
 }
 
 .popup-inner h3 {
@@ -110,4 +122,16 @@
 .popup-inner-responsive p {
     text-align: center;
     margin-top: 15px;
+}
+
+.cancel_btn__responsive {
+    background-image: url("./cancel.png");
+    background-size: 35%;
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: -20px;
+    top: 15px;
+    cursor: pointer;
 }
