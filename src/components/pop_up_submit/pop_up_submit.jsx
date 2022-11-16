@@ -2,13 +2,10 @@ import React from 'react';
 import Modal from '../UI/Modal';
 
 import { useMediaQuery } from 'react-responsive';
-import cancelImg from './cancel.png';
 
 import classes from './pop_up_submit.module.css';
 
 const PopUpSubmit = (props) => {
-    console.log(props);
-
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 900px)'
     });

@@ -57,6 +57,15 @@
     color: #fff;
 }
 
+.list-link-a-enroll {
+    color: red;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 10px;
+    animation: glowing 1300ms infinite;
+    background-color: #f3c26f;
+}
+
 /* RESPONSIVE */
 
 .card-responsive {
@@ -100,4 +109,26 @@
 
 .list-link-a-responsive-enroll {
     color: red;
+    text-decoration: none;
+    font-weight: 800;
+    margin-left: 10px;
+    animation: glowing 1300ms infinite;
+    background-color: rgba(255, 166, 1, 0.527)
+}
+
+@keyframes glowing {
+    0% {
+        /* background-color: #FFA100; */
+        box-shadow: 0 0 10px #FFA100;
+    }
+
+    50% {
+        /* background-color: #f7c570; */
+        box-shadow: 0 0 30px #FFA100;
+    }
+
+    100% {
+        /* background-color: #FFA100; */
+        box-shadow: 0 0 10px #FFA100;
+    }
 }
