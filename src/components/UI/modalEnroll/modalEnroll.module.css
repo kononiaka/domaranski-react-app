@@ -5,16 +5,56 @@
 }
 
 .generic_head_price h3 {
-    margin-bottom: 0 !important;
+    margin-bottom: 0;
+    color: green;
+    font-size: 15px;
+    text-align: center;
 }
 
 .total_payment {
     background-color: #e4e4e4;
     border-left: 5px solid #2ecc71;
-    color: #000 !important;
-    font-size: 14px !important;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.total_payment h3 {
+    font-size: 15px;
+    text-align: center;
 }
 
 .span {
     color: green;
+}
+
+.form_group {
+    /* display: flex; */
+    /* flex-direction: row; */
+}
+
+.form_control {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.form_control input {
+    width: 50%;
+}
+
+.pay_control {
+    display: flex;
+    justify-content: space-around;
+}
+
+.pay_btn {
+    font-size: 12px;
+}
+
+.pay_btn button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
 }
