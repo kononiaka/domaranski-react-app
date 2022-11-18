@@ -27,10 +27,10 @@
     color: green;
 }
 
-.form_group {
-    /* display: flex; */
-    /* flex-direction: row; */
-}
+/* .form_group {
+    display: flex;
+    flex-direction: row;
+} */
 
 .form_control {
     display: flex;
@@ -40,7 +40,12 @@
 
 .form_control input {
     width: 50%;
+    margin-bottom: 10px;
 }
+
+/* .form_control input:first-child {
+    margin-left: 100px;
+} */
 
 .pay_control {
     display: flex;
@@ -57,4 +62,70 @@
     border: none;
     cursor: pointer;
     overflow: hidden;
+}
+
+.button_block {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.submitBtn {
+    font-size: 14px;
+    /* font-weight: 600; */
+    background-color: #FFA100;
+    padding: 5px 5px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 25%;
+    margin: auto 0;
+    border: 1px solid transparent
+}
+
+.credit_card_block label {
+    font-size: 14px;
+}
+
+.credit_card_block_labels {
+    display: flex;
+    justify-content: space-around;
+}
+
+.credit_card_block_labels input {
+    width: 40%;
+    margin-left: -20px;
+    background-color: #0563af;
+}
+
+.credit_card_block_labels input::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: white;
+    opacity: 1;
+    /* Firefox */
+}
+
+.form_group:after {
+    position: absolute;
+    content: "";
+    margin: 20px 0;
+    height: 1px;
+    background-color: #807f7f;
+    width: 45%;
+    margin-left: 175px;
+    /* top: 50%; */
+}
+
+.credit_card_block_checkbox select {
+    background-color: #0563af;
+    color: white;
+    padding: 6px;
+    /* width: 250px; */
+    border: none;
+    margin-right: 15px;
+    /* font-size: 20px; */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
 }
