@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment } from 'react';
 
 import { useMediaQuery } from 'react-responsive';
 
@@ -14,11 +14,10 @@ const Modal = (props) => {
             query: '(min-width: 900px)'
         });
 
-        useEffect(() => {
-
-        }, [props]);
-
-        if (props.onSubmit) {
+        if (props.onSubmit && props.onEnroll) {
+            return <div className={isDesktopOrLaptop ? classes.submitModalEnroll : classes.submitModalEnroll__responsive}>{props.children}</div>;
+        }
+        if (props.onSubmit && !props.onEnroll) {
             return <div className={isDesktopOrLaptop ? classes.submitModal : classes.submitModal__responsive}>{props.children}</div>;
         }
         return <div className={isDesktopOrLaptop ? classes.modal : classes.modal__responsive}>{props.children}</div>;
@@ -29,7 +28,7 @@ const Modal = (props) => {
     return (
         <Fragment>
             <Backdrop />
-            <ModalOverlay onSubmit={props.onSubmit}>{props.children}</ModalOverlay>
+            <ModalOverlay onSubmit={props.onSubmit} onEnroll={props.onEnroll}>{props.children}</ModalOverlay>
         </Fragment>
     );
 };

@@ -25,6 +25,7 @@
 
 .span {
     color: green;
+    font-weight: bold;
 }
 
 /* .form_group {
@@ -43,9 +44,15 @@
     margin-bottom: 10px;
 }
 
-/* .form_control input:first-child {
-    margin-left: 100px;
-} */
+.form_control select {
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+.form_control:first-child {
+    margin-left: 5px;
+    width: 101.5%;
+}
 
 .pay_control {
     display: flex;
@@ -112,7 +119,7 @@
     height: 1px;
     background-color: #807f7f;
     width: 45%;
-    margin-left: 175px;
+    margin-left: 135px;
     /* top: 50%; */
 }
 
@@ -128,4 +135,92 @@
     -webkit-appearance: button;
     appearance: button;
     outline: none;
+}
+
+.btn_subscribe {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.btn_subscribe a {
+    /* text-decoration: none; */
+    color: #000;
+}
+
+.pay_control_responsive {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.span_disc {
+    color: rgb(121, 116, 116);
+    margin-left: 15px;
+}
+
+.form_control_responsive {
+    display: flex;
+    justify-content: space-around;
+}
+
+.form_control_responsive input {
+    width: 60%;
+    margin-bottom: 10px;
+}
+
+.form_control_responsive:first-child {
+    margin-left: 5px;
+    width: 101.5%;
+}
+
+.form_control_responsive select {
+    width: 60%;
+}
+
+.credit_card_block_checkbox_responsive select {
+    background-color: #0563af;
+    color: white;
+    padding: 2px;
+    /* width: 250px; */
+    border: none;
+    margin-right: 5px;
+    /* font-size: 20px; */
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+    -webkit-appearance: button;
+    appearance: button;
+    outline: none;
+}
+
+.form_group_responsive:after {
+    position: absolute;
+    content: "";
+    margin: 25px 0;
+    height: 1px;
+    background-color: #807f7f;
+    width: 35%;
+    margin-left: 120px;
+    /* top: 50%; */
+}
+
+.submitBtn_responsive {
+    font-size: 14px;
+    /* font-weight: 600; */
+    background-color: #FFA100;
+    padding: 5px 5px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.2s;
+    width: 50%;
+    margin: auto 0;
+    border: 1px solid transparent
+}
+
+.btn_subscribe_responsive {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.btn_subscribe_responsive a {
+    color: #000;
 }

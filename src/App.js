@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 
 import ModalHelp from './components/ModalHelp/modalHelp';
 import Main from './components/main/main';
@@ -15,6 +15,7 @@ import { useMediaQuery } from 'react-responsive';
 import './App.css';
 
 const Home = () => {
+  console.log();
   const [showSubmit, setShowSubmit] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [showEnroll, setShowEnroll] = useState(false);
@@ -26,9 +27,11 @@ const Home = () => {
   const helpHandler = () => {
     setShowHelp(true);
   };
-  const handleClick = () => {
+  const handleClick = useCallback(() => {
     setShowSubmit(true);
-  };
+    setShowEnroll(false);
+  }, []);
+
   const handleEnroll = () => {
     setShowEnroll(true);
   };
@@ -47,7 +50,7 @@ const Home = () => {
       <TradingSchool></TradingSchool>
       <Education handleClick={handleClick}></Education>
       <Footer></Footer>
-      {showEnroll && <ModalEnroll onClose={helpCloseHandler} submit />}
+      {showEnroll && <ModalEnroll onClose={helpCloseHandler} submit enroll click={handleClick} />}
       {showSubmit && <PopUpSubmit onClose={helpCloseHandler} submit />}
       {showHelp && <ModalHelp onClose={helpCloseHandler} />}
     </div>
