@@ -13,12 +13,14 @@ import ModalEnroll from './components/UI/modalEnroll/modalEnroll';
 import { useMediaQuery } from 'react-responsive';
 
 import './App.css';
+import GrafBanner from "./components/graf_banner/graf_banner";
+import GrafHelp from "./components/graf_banner/graf_help";
 
 const Home = () => {
-  console.log();
   const [showSubmit, setShowSubmit] = useState(false);
   const [showHelp, setShowHelp] = useState(false);
   const [showEnroll, setShowEnroll] = useState(false);
+  const [showGraf, setShowGraf] = useState(false);
 
   const isDesktopOrLaptop = useMediaQuery({
     query: '(min-width: 900px)'
@@ -40,6 +42,11 @@ const Home = () => {
     setShowEnroll(false);
     setShowHelp(false);
     setShowSubmit(false);
+    setShowGraf(false);
+  };
+
+  const handleGrafClick = () => {
+    setShowGraf(true);
   };
 
   return (
@@ -50,9 +57,11 @@ const Home = () => {
       <TradingSchool></TradingSchool>
       <Education handleClick={handleClick}></Education>
       <Footer></Footer>
+      <GrafBanner handleGrafClick={handleGrafClick} onClose={helpCloseHandler}></GrafBanner >
       {showEnroll && <ModalEnroll onClose={helpCloseHandler} submit enroll click={handleClick} />}
       {showSubmit && <PopUpSubmit onClose={helpCloseHandler} submit />}
       {showHelp && <ModalHelp onClose={helpCloseHandler} />}
+      {showGraf && <GrafHelp onClose={helpCloseHandler} graf />}
     </div>
   );
 };
