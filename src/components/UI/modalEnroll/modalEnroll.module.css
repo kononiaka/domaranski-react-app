@@ -66,20 +66,35 @@
     justify-content: space-around;
 }
 
+.choose_payment {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
 .pay_btn {
     font-size: 12px;
+    border: transparent 1px solid;
+    padding: 0 5px;
+    cursor: pointer;
 }
 
 .pay_btn button {
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
-    cursor: pointer;
     overflow: hidden;
 }
 
+.pay_btn:hover {
+    border: rgb(156, 151, 151) 1px solid;
+    border-radius: 2px;
+}
+
 .button_block {
-    margin-top: 50px;
+    margin-top: 25px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
@@ -87,18 +102,19 @@
     font-size: 14px;
     /* font-weight: 600; */
     background-color: #FFA100;
-    padding: 5px 5px;
+    padding: 10px 15px;
     border-radius: 6px;
     text-align: center;
     cursor: pointer;
     transition: all 0.2s;
-    width: 25%;
+    /* width: 25%; */
     margin: auto 0;
     border: 1px solid transparent
 }
 
 .credit_card_block label {
     font-size: 14px;
+    margin-top: 15px;
 }
 
 .credit_card_block_labels {
@@ -108,8 +124,13 @@
 
 .credit_card_block_labels input {
     width: 40%;
-    margin-left: -20px;
-    background-color: #0563af;
+    height: 20%;
+    /* margin-left: -20px; */
+    background-color: #abaeb1;
+}
+
+.credit_card_block_labels select {
+    width: 40%;
 }
 
 .credit_card_block_labels input::placeholder {
@@ -131,7 +152,7 @@
 }
 
 .credit_card_block_checkbox select {
-    background-color: #0563af;
+    background-color: #abaeb1;
     color: white;
     padding: 6px;
     /* width: 250px; */
