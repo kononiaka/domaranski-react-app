@@ -26,6 +26,7 @@
 .span {
     color: green;
     font-weight: bold;
+    margin-right: 5px;
 }
 
 /* .form_group {
@@ -34,24 +35,30 @@
 } */
 
 .form_control {
-    display: flex;
-    justify-content: space-around;
+    /* display: flex; */
+    width: 150px;
+    justify-content: start;
+    display: inline-block;
+    margin-left: 50px;
+    margin-right: 25px;
 }
 
 
-.form_control input {
-    width: 50%;
+.form_group input {
+    width: 300px;
     margin-bottom: 10px;
+    display: inline-block;
+}
+
+.form_group select {
+    width: 300px;
+    margin-bottom: 10px;
+    display: inline-block;
 }
 
 .form_control select {
     width: 50%;
     margin-bottom: 10px;
-}
-
-.form_control:first-child {
-    margin-left: 5px;
-    width: 101.5%;
 }
 
 .pay_control {

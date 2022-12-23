@@ -1,4 +1,4 @@
-import logo from "../../img/graf-logo-black.jpg";
+import logo from "../../img/graf-logo-black-removebg.png";
 import classes from './graf_banner.module.css';
 
 import { useMediaQuery } from 'react-responsive';

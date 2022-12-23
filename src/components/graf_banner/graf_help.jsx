@@ -21,7 +21,7 @@ const GrafHelp = (props) => {
             <p>or visit our Facebook Group Page</p>
             <div className={classes.phone_logo_block}>
                 <div className={classes.phone_logo}>
-                    <a href="tel:+380734940031">Graf_Studio</a>
+                    <a target="_blank" href="https://www.facebook.com/groups/grafwebstudio">Graf_Studio</a>
                 </div>
             </div>
         </Modal>
