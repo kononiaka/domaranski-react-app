@@ -21,6 +21,22 @@ const ModalEnroll = (props) => {
     const [firstName, setFirstName] = useState('');
     const [lastName, setLastName] = useState('');
 
+    const sendRequest = async (emailValue, firstNameValue, lastNameValue, countryNameValue) => {
+        const response = await fetch('https://trading-as-a-business-default-rtdb.europe-west1.firebasedatabase.app/payments.json', {
+            method: 'POST',
+            body: JSON.stringify({ email: emailValue, firstName: firstNameValue, lastName: lastNameValue, country: countryNameValue }),
+            'Content-Type': 'application/json'
+        });
+
+        const data = await response.json();
+
+        console.log(data);
+
+        if (response.status === 200) {
+            setPaymentSent(true);
+        }
+    };
+
     const confirmHandler = async (event) => {
         event.preventDefault();
 
@@ -29,12 +45,10 @@ const ModalEnroll = (props) => {
         const lastNameValue = event.target[2].value;
         const countryNameValue = event.target[3].value;
 
-        setPaymentSent(true);
+        sendRequest(emailValue, firstNameValue, lastNameValue, countryNameValue); //needs to be substituted with logic for the paypal/cc API
 
         setFirstName(firstNameValue);
         setLastName(lastNameValue);
-
-        //logic for the paypal/cc API
     };
 
     const showCreditCard = (e) => {
