@@ -15,7 +15,7 @@ const BannerInner = (props) => {
         <div className={isDesktopOrLaptop ? classes['banner-inner'] : classes['banner-inner-responsive']}>
             <ContainerWrapper>
                 <h2>
-                    Start Your Trading Journey with TRADING AS A BUSINESS with a 7 Day Trial!
+                    Start Your Trading Journey with TRADING AS A BUSINESS Now!
                 </h2>
                 <Button click={props.handleClick}></Button>
             </ContainerWrapper>

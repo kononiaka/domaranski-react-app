@@ -1,9 +1,8 @@
 import { useMediaQuery } from 'react-responsive';
-
 import classes from './Button.module.css';
 
-
 const Button = (props) => {
+
     const isDesktopOrLaptop = useMediaQuery({
         query: '(min-width: 900px)'
     });
@@ -15,7 +14,7 @@ const Button = (props) => {
         `${classes.banner__btn__responsive}`;
     return (
         <div className={classDiv} onClick={props.click}>
-            Start Your 7-Day Trial Now!
+            Start Trading Journey Now
         </div>
     );
 };

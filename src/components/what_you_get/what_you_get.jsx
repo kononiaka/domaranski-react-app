@@ -27,7 +27,7 @@ const WhatYouGet = () => {
                         <h4>
                             Use the world’s best due diligence tool to research the markets, discover opportunity and conduct your technical analysis.
                         </h4>
-                        <b>Normal price: $2,124 / year</b>
+                        <b>Normal price: $2437 one time payment</b>
                     </div>
                     <div className={isDesktopOrLaptop ? classes['info-card'] : classes['info-cards-responsive']}>
                         <img className={isDesktopOrLaptop ? classes['second-image'] : classes['second-image-responsive']} src={img_person} alt="person" />

@@ -88,8 +88,9 @@
 }
 
 .pay_btn:hover {
-    border: rgb(156, 151, 151) 1px solid;
+    /* border: rgb(156, 151, 151) 1px solid; */
     border-radius: 2px;
+    background-color: #2ecc705e;
 }
 
 .button_block {

@@ -2,7 +2,6 @@ import Modal from '../UI/Modal';
 
 import classes from './modalHelp.module.css';
 
-
 const ModalHelp = (props) => {
     return (
         <Modal onClick={props.onClose}>
@@ -16,6 +15,18 @@ const ModalHelp = (props) => {
                 <div className={classes.phone_logo}>
                     <a href="tel:+380734940031">+380734940031</a>
                 </div>
+            </div>
+            <div className={classes.tg_logo_block}>
+                <div className={classes.tg_logo}></div>
+                <a href="https://t.me/Trading_as_a_Business" target="_blank">Concact us in Telegram</a>
+            </div>
+            <div className={classes.viber_logo_block}>
+                <div className={classes.viber_logo}></div>
+                <a href="viber://chat?number=%2B380734940031" target="_blank">Concact us in Viber</a>
+            </div>
+            <div className={classes.whatsapp_logo_block}>
+                <div className={classes.whatsapp_logo}></div>
+                <a href="https://wa.me/80734940031" target="_blank">Concact us in WhatsApp</a>
             </div>
         </Modal>
     );

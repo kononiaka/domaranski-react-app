@@ -14,7 +14,7 @@ const Main = (props) => {
     return (
         <div className={isDesktopOrLaptop ? classes.main : classes["main-responsive"]}>
             {isDesktopOrLaptop && <div className={classes['gap-first']} />}
-            <LeftContainer handleClick={props.handleClick} click={props.enrollClick} />
+            <LeftContainer handleClick={props.handleClick} click={props.enrollClick} followContacts={props.followContacts} />
             {isDesktopOrLaptop && <div className={classes.gap} />}
             <div>
                 <img className={isDesktopOrLaptop ? classes["help-ico"] : classes["help-ico-responsive"]} src={help_ico} alt="help-ico" onClick={props.helpHandler} />
