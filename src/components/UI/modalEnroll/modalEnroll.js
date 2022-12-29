@@ -35,9 +35,9 @@ const ModalEnroll = (props) => {
 
         console.log(data);
 
-        if (response.status === 200) {
-            setPaymentSent(true);
-        }
+        // if (response.status === 200) {
+        setPaymentSent(true);
+        // }
     };
 
     const confirmHandler = async (event) => {

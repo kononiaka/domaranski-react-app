@@ -15,8 +15,8 @@
 .submitModalCongrats {
     background-image: url("../../img/congrats.jpg");
     position: fixed;
-    top: 25vh;
-    left: calc(25%);
+    top: -5vh;
+    left: calc(-25%);
     width: 65em;
     height: 25em;
     background-color: white;
