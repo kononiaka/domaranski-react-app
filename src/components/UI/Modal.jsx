@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 import classes from "./Modal.module.css";
 
 const Modal = (props) => {
+
     const Backdrop = () => {
         return <div className={classes.backdrop} onClick={props.onClick}></div >;
     };
@@ -33,7 +34,7 @@ const Modal = (props) => {
     return (
         <Fragment>
             <Backdrop />
-            <ModalOverlay onSubmit={props.onSubmit} onEnroll={props.onEnroll} graf={props.graf} onCongrats={props.onCongrats}>{props.children} </ModalOverlay>
+            <ModalOverlay onSubmit={props.onSubmit} onEnroll={props.onEnroll} graf={props.graf} onCongrats={props.onCongrats}>{props.children}</ModalOverlay>
         </Fragment>
     );
 };

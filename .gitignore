@@ -4,6 +4,7 @@
 /node_modules
 /html_before
 /.pnp
+build.zip
 .pnp.js
 
 # testing
