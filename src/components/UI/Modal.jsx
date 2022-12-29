@@ -23,13 +23,9 @@ const Modal = (props) => {
         if (props.graf) {
             return <div className={isDesktopOrLaptop ? classes.modal_graf : classes.modal_graf__responsive}>{props.children}</div>;
         }
-        if (props.onCongrats) {
-            return <div className={isDesktopOrLaptop ? classes.submitModalCongrats : classes.submitModalCongrats__responsive}>{props.children}</div>;
-        }
         return <div className={isDesktopOrLaptop ? classes.modal : classes.modal__responsive}>{props.children}</div>;
     };
 
-    // const portalElement = document.getElementById("overlays");
 
     return (
         <Fragment>

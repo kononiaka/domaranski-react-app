@@ -60,8 +60,8 @@ const Home = (props) => {
       <Education handleClick={handleClick}></Education>
       <Footer></Footer>
       <GrafBanner handleGrafClick={handleGrafClick} onClose={helpCloseHandler}></GrafBanner >
-      {showEnroll && <ModalEnroll onClose={helpCloseHandler} submit enroll click={handleClick} />}
-      {showSubmit && <ModalEnroll onClose={helpCloseHandler} submit enroll click={handleClick} />}
+      {showEnroll && <ModalEnroll onClose={helpCloseHandler} />}
+      {showSubmit && <ModalEnroll onClose={helpCloseHandler} />}
       {showHelp && <ModalHelp onClose={helpCloseHandler} />}
       {showGraf && <GrafHelp onClose={helpCloseHandler} graf />}
     </div>
